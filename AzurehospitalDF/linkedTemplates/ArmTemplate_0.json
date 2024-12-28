@@ -566,7 +566,7 @@
 									}
 								},
 								{
-									"name": "If Condition1",
+									"name": "Clean_bronze_folder",
 									"type": "IfCondition",
 									"dependsOn": [
 										{
@@ -662,11 +662,11 @@
 									}
 								},
 								{
-									"name": "If Condition2",
+									"name": "Insert_DB_to_Bronzelayer",
 									"type": "IfCondition",
 									"dependsOn": [
 										{
-											"activity": "If Condition1",
+											"activity": "Clean_bronze_folder",
 											"dependencyConditions": [
 												"Succeeded"
 											]
