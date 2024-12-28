@@ -1,0 +1,9 @@
+{
+	"name": "AzurehospitalDF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "08502e73-3b52-480f-939b-d4be149a109d",
+		"tenantId": "1cce8bf0-f8fe-4c96-963b-95bd9b72a941"
+	}
+}

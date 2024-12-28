@@ -1,0 +1,117 @@
+{
+	"name": "azhospitaA_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "TransactionID",
+				"type": "String"
+			},
+			{
+				"name": "EncounterID",
+				"type": "String"
+			},
+			{
+				"name": "PatientID",
+				"type": "String"
+			},
+			{
+				"name": "ProviderID",
+				"type": "String"
+			},
+			{
+				"name": "DeptID",
+				"type": "String"
+			},
+			{
+				"name": "VisitDate",
+				"type": "String"
+			},
+			{
+				"name": "ServiceDate",
+				"type": "String"
+			},
+			{
+				"name": "PaidDate",
+				"type": "String"
+			},
+			{
+				"name": "VisitType",
+				"type": "String"
+			},
+			{
+				"name": "Amount",
+				"type": "String"
+			},
+			{
+				"name": "AmountType",
+				"type": "String"
+			},
+			{
+				"name": "PaidAmount",
+				"type": "String"
+			},
+			{
+				"name": "ClaimID",
+				"type": "String"
+			},
+			{
+				"name": "PayorID",
+				"type": "String"
+			},
+			{
+				"name": "ProcedureCode",
+				"type": "String"
+			},
+			{
+				"name": "ICDCode",
+				"type": "String"
+			},
+			{
+				"name": "LineOfBusiness",
+				"type": "String"
+			},
+			{
+				"name": "MedicaidID",
+				"type": "String"
+			},
+			{
+				"name": "MedicareID",
+				"type": "String"
+			},
+			{
+				"name": "InsertDate",
+				"type": "String"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
