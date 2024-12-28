@@ -71,7 +71,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "generic_datalake_ls",
+									"referenceName": "generic_adls_parquet_ls",
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "bronze",
@@ -79,10 +79,7 @@
 											"value": "@item().targetpath",
 											"type": "Expression"
 										},
-										"file_name": {
-											"value": "@split(item().tablename,'.')[1]",
-											"type": "Expression"
-										}
+										"file_name": "@split(item().tablename,'.')[1]"
 									}
 								},
 								"fieldList": [
@@ -94,7 +91,7 @@
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
-									"type": "DelimitedTextReadSettings"
+									"type": "ParquetReadSettings"
 								}
 							}
 						},
