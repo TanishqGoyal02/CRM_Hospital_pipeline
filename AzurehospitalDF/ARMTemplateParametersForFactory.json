@@ -8,6 +8,9 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"AzureDatabricksDeltaLake1_accessToken": {
 			"value": ""
 		},
@@ -16,6 +19,12 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsdevelopmentcrm.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1228-002659-dbivlo4t"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://SecureCRM.vault.azure.net/"
 		},
 		"CRM_A_ls_properties_typeProperties_server": {
 			"value": "hospitalcrma.database.windows.net"
