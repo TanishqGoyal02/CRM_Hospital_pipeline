@@ -576,14 +576,7 @@
 									"type": "IfCondition",
 									"state": "Inactive",
 									"onInactiveMarkAs": "Succeeded",
-									"dependsOn": [
-										{
-											"activity": "Clean_bronze_folder",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
+									"dependsOn": [],
 									"userProperties": [],
 									"typeProperties": {
 										"expression": {
@@ -870,7 +863,7 @@
 									"type": "IfCondition",
 									"dependsOn": [
 										{
-											"activity": "Insert_DB_to_Bronzelayer",
+											"activity": "Clean_bronze_folder",
 											"dependencyConditions": [
 												"Succeeded"
 											]
