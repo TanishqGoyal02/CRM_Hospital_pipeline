@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"name": "NPI",
+				"name": "NPI-",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -268,7 +268,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "NPI",
+						"activity": "NPI-",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -310,7 +310,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/tgoyal@ucsc.edu/GOLD/dimension_patient"
+					"notebookPath": "/Users/tgoyal@ucsc.edu/GOLD/dimension_Patient"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
